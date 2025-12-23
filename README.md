@@ -186,9 +186,6 @@ Implementation of **14 automated tests** to validate banking data reliability:
 
 ### **Phase 5: BI Modeling (Star Schema)**
 
-> The dashboard :
-<img width="954" height="539" alt="Capture d&#39;écran 2025-12-23 081731" src="https://github.com/user-attachments/assets/f8559cbc-88ed-4ed2-88ad-b5980f564371" />
-
 The Power BI dashboard is built on a **pure star schema** to optimize performance and query simplicity:
 
 > Semantic Model :
@@ -209,18 +206,6 @@ The Power BI dashboard is built on a **pure star schema** to optimize performanc
 - Fixed ambiguous filter path relationships by denormalizing customer_id into the fact table
 - Synchronized temporal granularity (Date vs DateTime) between Snowflake and Power BI
 - Created calculated column `Date_Link` to connect timestamps with calendar dimension
-
----
-
-## 🛠️ Technical Challenges & Solutions
-
-| Challenge | Problem | Solution |
-|-----------|---------|----------|
-| **Filter Ambiguity** | Multiple relationship paths between Date and Transactions causing incorrect filtering | Denormalized customer_id into fact table to simplify Star Schema relationships |
-| **VARIANT Handling** | Raw JSON data difficult to query and analyze | Used dbt SQL transformations to flatten JSON into structured columns |
-| **Temporal Filters** | DateTime mismatch between Snowflake timestamps and Power BI Date dimension | Created calculated column to extract date from timestamp for proper joins |
-| **Data Deduplication** | CDC events can create duplicate records | Implemented `ROW_NUMBER()` partitioning in staging models |
-| **Historical Tracking** | Need to track changes over time without losing history | Implemented SCD Type 2 using dbt snapshots with valid_from/valid_to |
 
 ---
 
@@ -295,6 +280,11 @@ GROUP BY transaction_status;
 ### **Strategic Banking Dashboard**
 
 The final deliverable is a comprehensive **Power BI dashboard** titled **"Strategic Banking Piloting"** that answers critical business questions:
+
+> The dashboard :
+<img width="954" height="539" alt="Capture d&#39;écran 2025-12-23 081731" src="https://github.com/user-attachments/assets/f8559cbc-88ed-4ed2-88ad-b5980f564371" />
+
+
 
 #### **Key Metrics Tracked**
 
@@ -396,4 +386,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 
 **⭐ If you found this project helpful, please give it a star!**
+
 
