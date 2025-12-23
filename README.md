@@ -186,7 +186,14 @@ Implementation of **14 automated tests** to validate banking data reliability:
 
 ### **Phase 5: BI Modeling (Star Schema)**
 
+> The dashboard :
+<img width="954" height="539" alt="Capture d&#39;écran 2025-12-23 081731" src="https://github.com/user-attachments/assets/f8559cbc-88ed-4ed2-88ad-b5980f564371" />
+
 The Power BI dashboard is built on a **pure star schema** to optimize performance and query simplicity:
+
+> Semantic Model :
+
+<img width="924" height="683" alt="Capture d&#39;écran 2025-12-23 085214" src="https://github.com/user-attachments/assets/435889bd-8264-4c8f-9f19-1b40794a28c0" />
 
 #### **Fact Table**
 - **FACT_TRANSACTIONS**: Contains transaction amounts, dates, IDs, and foreign keys
@@ -389,3 +396,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 
 **⭐ If you found this project helpful, please give it a star!**
+
