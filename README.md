@@ -69,7 +69,7 @@ The solution relies on a robust **ELT** (Extract, Load, Transform) architecture,
 ## 📂 Repository Structure
 
 ```text
-banking-modern-datastack/
+banking-ELT-pipeline-snowflake-dbt-kafka/
 ├── .github/workflows/         # CI/CD pipelines (ci.yml, cd.yml)
 ├── banking_dbt/              # dbt project
 │   ├── models/
@@ -222,8 +222,8 @@ The Power BI dashboard is built on a **pure star schema** to optimize performanc
 
 ```bash
 # 1. Clone the repository
-git clone <your-repo-url>
-cd banking-project
+git clone https://github.com/haf0g/banking-ELT-pipeline-snowflake-dbt-kafka.git
+cd banking-ELT-pipeline-snowflake-dbt-kafka
 
 # 2. Configure Snowflake credentials
 # Create banking_dbt/.dbt/profiles.yml with your Snowflake credentials
@@ -241,8 +241,8 @@ docker-compose ps
 ### **Running the Pipeline**
 
 1. **Access Airflow UI**: Navigate to [http://localhost:8080](http://localhost:8080)
-   - Username: `admin`
-   - Password: `admin`
+   - Username: `airflow`
+   - Password: `airflow`
 
 2. **Activate DAGs**: Enable both DAGs in the Airflow UI
 
@@ -386,6 +386,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 
 **⭐ If you found this project helpful, please give it a star!**
+
 
 
 
