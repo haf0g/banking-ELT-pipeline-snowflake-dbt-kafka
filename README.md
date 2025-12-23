@@ -23,6 +23,7 @@ The solution relies on a robust **ELT** (Extract, Load, Transform) architecture,
 
 ## 🏗️ Architecture
 
+<img width="797" height="343" alt="image" src="https://github.com/user-attachments/assets/bc46f9a4-295c-4b57-acce-28f3b998cc7f" />
 
 ### Pipeline Flow
 
@@ -385,5 +386,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Thanks to the open-source community for amazing tools
 
 ---
+
 
 **⭐ If you found this project helpful, please give it a star!**
