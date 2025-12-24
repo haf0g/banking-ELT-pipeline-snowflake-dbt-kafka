@@ -366,9 +366,11 @@ For more detailed documentation on specific components:
 
 ## 👨‍💻 Author
 
-**Developed by**: Hafid Garhoum & Khawla Darhami & Nora Boucetta & Hasnae Asbai
-**Date**: December 2025
-**Course**: Big Data & Applications
+**Developed by**: Hafid Garhoum & Khawla Darhami & Nora Boucetta & Hasnae Asbai 
+
+**Date**: December 2025 
+ 
+**Course**: Big Data & Applications 
 
 ## 📄 License
 
@@ -386,6 +388,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 
 **⭐ If you found this project helpful, please give it a star!**
+
 
 
 
